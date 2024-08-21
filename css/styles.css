@@ -1,0 +1,286 @@
+@charset "EUC-KR";
+/* 기본 스타일 설정 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0; /* 배경색을 밝은 크림색으로 변경 */
+    color: #333;
+}
+
+header {
+    background-color: #fff; /* 흰색 배경 */
+    border-bottom: 1px solid #e0e0e0; /* 부드러운 회색 */
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #ff6f61; /* 식욕을 돋우는 오렌지색 */
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons a {
+    color: #ff6f61;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.auth-buttons a:hover {
+    text-decoration: underline;
+}
+
+.nav-bar {
+    background-color: #fff; /* 흰색 배경 */
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0; /* 부드러운 회색 */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    color: #ff6f61; /* 식욕을 돋우는 오렌지색 */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.nav-bar a:hover {
+    color: #e63946; /* 약간 어두운 오렌지색 */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px 0 0 4px;
+    margin-right: -1px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    border: 1px solid #ff6f61;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e63946; /* 약간 어두운 오렌지색 */
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffd1b3; /* 밝은 코랄 색 */
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background-color: #e63946; /* 약간 어두운 오렌지색 */
+}
+
+.main-content {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6f61; /* 오렌지색 밑줄 */
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-link {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(25% - 20px);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.restaurant-card h3 {
+    margin: 15px;
+    font-size: 1.3em;
+    color: #ff6f61; /* 식욕을 돋우는 오렌지색 */
+}
+
+.restaurant-card p {
+    margin: 0 15px 15px;
+}
+
+.review-section {
+    margin-top: 40px;
+    overflow: hidden; /* 리뷰 섹션의 overflow를 hidden으로 설정하여 스크롤 바를 숨김 */
+}
+
+.review-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff6f61; /* 식욕을 돋우는 오렌지색 */
+    border-bottom: 2px solid #ff6f61; /* 오렌지색 밑줄 */
+    padding-bottom: 10px;
+}
+
+.review-carousel {
+    display: flex;
+    overflow: hidden; /* 슬라이드가 섹션 밖으로 나가지 않도록 설정 */
+    position: relative;
+    width: 100%;
+}
+
+.review-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.review-slide {
+    flex: 0 0 auto;
+    width: 25%; /* 4개 카드가 보이도록 설정 */
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 220px; /* 카드 높이 고정 */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.review-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.review-card .review-content {
+    text-align: center;
+}
+
+.review-card .reviewer-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff6f61; /* 식욕을 돋우는 오렌지색 */
+}
+
+.review-card .review-text {
+    font-size: 0.9em;
+    color: #555;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 최대 3줄까지 보이도록 설정 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 넘치는 텍스트는 ...으로 표시 */
+}
+
+footer {
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.875em;
+    color: #333;
+}
